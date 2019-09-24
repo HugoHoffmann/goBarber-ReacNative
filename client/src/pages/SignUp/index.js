@@ -3,10 +3,8 @@ import { View } from 'react-native';
 
 // import { Container } from './styles';
 
-import Route from './routes';
-
-export default function src() {
+export default function SignUp() {
   return (
-    <Route />
+    <View />
   );
 }
