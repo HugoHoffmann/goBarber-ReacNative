@@ -9,8 +9,7 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="light-content" backgroundColor="#ff9033"/>
-      {/* <Routes /> */}
-      <Text>Teste</Text>
+      <Routes />
     </>
   );
 }
