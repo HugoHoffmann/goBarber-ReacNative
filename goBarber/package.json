@@ -10,6 +10,8 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "axios": "^0.19.0",
+    "immer": "^4.0.0",
     "postinstall": "^0.5.1",
     "prop-types": "^15.7.2",
     "react": "16.8.6",
@@ -27,6 +29,7 @@
     "reactotron-redux": "^3.1.2",
     "reactotron-redux-saga": "^4.2.2",
     "redux": "^4.0.4",
+    "redux-persist": "^6.0.0",
     "redux-saga": "^1.1.1",
     "styled-components": "^4.4.0"
   },
