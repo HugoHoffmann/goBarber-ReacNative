@@ -2,12 +2,21 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-import { Container, Title, Form, FormInput, SubmitButton, Separator } from './styles';
+import {
+  Container, 
+  Title, 
+  Form, 
+  FormInput, 
+  SubmitButton, 
+  Separator,
+  LogoutButton 
+} from './styles';
 
 import Background from '~/components/Background';
 import { SubmitButton } from '../SignUp/styles';
 
 import { updateProfileRequest } from '~/store/modules/user/actions';
+import { signOut } from '~/store/modules/auth/actions';
 
 export default function Profile() {
   const dispatch = useDispatch();
@@ -38,6 +47,11 @@ export default function Profile() {
       confirmPassword,
     }));
   }
+
+  function handleLogout(){
+    dispatch(signOut());
+  }
+
   return (
     <Background>
       <Container>
@@ -104,6 +118,9 @@ export default function Profile() {
           <SubmitButton onPress={handleSubmit}>
             Atualizar Perfil
           </SubmitButton>
+          <LogoutButton onPress={handleLogout}>
+            Sair
+          </LogoutButton>
         </Form>
       </Container>
     </Background>
