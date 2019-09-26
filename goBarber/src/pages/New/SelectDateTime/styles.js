@@ -12,7 +12,7 @@ export const HourList = styled.FlatList.attrs({
   padding: 0 20px;
 `;
 
-export const Hour = styled.(RectButton)`
+export const Hour = styled(RectButton)`
   background: #fff;
   border-radius: 4px;
   padding: 20px;

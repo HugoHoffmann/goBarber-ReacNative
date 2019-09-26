@@ -16,6 +16,10 @@ export default function SelectDateTime({navigation}) {
   const provider = navigation.getParam('provider');
 
   function handleSelectHour(time){
+    navigation.navigate('Confirm', {
+      provider,
+      time
+    })
 
   }
 
