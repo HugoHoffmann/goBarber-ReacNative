@@ -45,6 +45,7 @@ export default ( isSigned = false ) => createAppContainer(
             },
             Profile,
         }, {
+            resetOnBlur: true,
             tabBarOptions: {
                 keyboardHidesTabBar: true,
                 activeTintColor: '#fff',

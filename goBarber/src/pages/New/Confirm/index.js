@@ -3,6 +3,7 @@ import { TouchableOpacity } from 'react-native';
 import { formatRelative, parseISO } from 'date-fns';
 import pt from 'date-fns/locale/pt';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { withNavigationFocus } from 'react-navigation';
 
 import { Container, Name, Time, Avatar, SubmitButton } from './styles';
 import Background from '~/components/Background';
